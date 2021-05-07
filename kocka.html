@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="kockafelszín.js"></script>
+    <script src="kockaterfogat.js"></script>
+    <title>Testek és síkidomok</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm container bg-dark justify-content-center">
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="navbar-nav navbar-brand">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Főoldal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kor.html">Kör</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="haromszog.html">Háromszög</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="kocka.html">Kocka</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="teglatest.html">Téglatest</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="card">
+        <div class="card-body abrak">
+            <h1>Az adatokat cm-ben adja meg!</h1>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-body bg-secondary">
+            <h3>Felszín</h3>
+            <div>
+                <form>
+                    <div class="row mb-2">
+                        <div class="col-12 col-md-4">
+                            <label for="aoldal">'A' oldal hossza: </label>
+                        </div>
+                        <div class="col-12 col-md-8">
+                            <input class="form-control" type="number" id="aoldal" min="0" onclick="szamol()">
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-12 col-md-4">
+                            <label for="boldal">'B' oldal hossza: </label>
+                        </div>
+                        <div class="col-12 col-md-8">
+                            <input class="form-control" type="number" id="boldal" min="0" onclick="szamol()">
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-12 col-md-4">
+                            <label for="coldal">'C' oldal hossza: </label>
+                        </div>
+                        <div class="col-12 col-md-8">
+                            <input class="form-control" type="number" id="coldal" min="0" onclick="szamol()">
+                        </div>
+                    </div>
+
+
+                    <div class="row mb-2">
+                        <div class="col-12 col-md-4">
+                            <label for="kockafelszin">Felszín = </label>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <output type="text" class="form-control" id="kockafelszin"></output>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-body bg-secondary">
+            <h3>Térfogat</h3>
+            <div>
+                <form>
+                    <div class="row mb-2">
+                        <div class="col-12 col-md-4">
+                            <label for="a">'A' oldal hossza: </label>
+                        </div>
+                        <div class="col-12 col-md-8">
+                            <input class="form-control" type="number" id="a" min="0" onclick="szamol()">
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-12 col-md-4">
+                            <label for="b">'B' oldal hossza: </label>
+                        </div>
+                        <div class="col-12 col-md-8">
+                            <input class="form-control" type="number" id="b" min="0" onclick="szamol()">
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-12 col-md-4">
+                            <label for="c">'C' oldal hossza: </label>
+                        </div>
+                        <div class="col-12 col-md-8">
+                            <input class="form-control" type="number" id="c" min="0" onclick="szamol()">
+                        </div>
+                    </div>
+
+
+                    <div class="row mb-2">
+                        <div class="col-12 col-md-4">
+                            <label for="kockaterfogat">Térfogat = </label>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <output type="text" class="form-control" id="kockaterfogat"></output>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container my-2 p-2 bg-dark border">
+        <p>Bencze Sára</p>
+    </footer>
+</body>
+
+</html>

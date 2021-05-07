@@ -1,0 +1,44 @@
+body {
+    background-color: lightgray;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.nav-link:hover {
+    color: grey !important;
+}
+
+p {
+    text-align: justify;
+}
+
+.abrak {
+    background-color: darkgray;
+    color: black;
+    text-align: center;
+}
+
+.kep {
+    float: left;
+    width: 55%;
+    margin: 20px;
+    border: 2px solid black;
+}
+
+footer {
+    height: 50px;
+}
+
+footer p {
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+
+#eredmeny {
+    background-color: rgb(200, 200, 200);
+    font-weight: bold;
+    border: 1px solid #ffc107;
+}
